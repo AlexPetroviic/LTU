@@ -91,39 +91,3 @@ plt.title('DBSCAN: %d clusters' % clusters,fontsize=20)
 plt.xlabel('x axis',fontsize=14)
 plt.ylabel('y axis',fontsize=14)
 plt.show()
-
-
-#%%
-'''
-Task 2 (+1)
-
-Find an optimized value for eps.
-Plot the elbow and extract the optimal value from the plot
-Apply DBSCAN again with the new eps value and confirm visually that clusters are proper
-
-https://www.analyticsvidhya.com/blog/2020/09/how-dbscan-clustering-works/
-https://machinelearningknowledge.ai/tutorial-for-dbscan-clustering-in-python-sklearn/
-
-For both the datasets
-Report the optimal value of eps in the Readme to your github project
-Add the elbow plots to your github project Readme
-Add the cluster plots to your github project Readme
-'''
-
-
-
-
-#%%
-'''
-Task 3 (+1)
-
-Find the largest cluster, since that should be the catenary, 
-beware of the noise cluster.
-
-Use the x,y span for the clusters to find the largest cluster
-
-For both the datasets
-Report min(x), min(y), max(x), max(y) for the catenary cluster in the Readme of your github project
-Add the plot of the catenary cluster to the readme
-
-'''
