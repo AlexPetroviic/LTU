@@ -48,7 +48,7 @@ pcd2 = np.load("dataset2.npy")
 print("pcd2 shape: ", pcd2.shape)
 
 #%% show downsampled data in external window
-%matplotlib qt
+#%matplotlib qt
 show_cloud(pcd1)
 show_cloud(pcd2)
 
@@ -90,7 +90,20 @@ print("Above pcd2 groundlevel :",pcd2_above_ground.shape)
 show_cloud(pcd1_above_ground[::2])
 show_cloud(pcd2_above_ground[::2])
 
+#%%
 
+plt.hist(pcd1_above_ground, bins=100)
+plt.title("Height Histogram for pcd1")
+plt.xlabel("Z-axis")
+plt.ylabel("Frequency")
+plt.show()
+
+#%%
+plt.hist(pcd2_above_ground, bins=100)
+plt.title("Height Histogram for pcd2")
+plt.xlabel("Z-axis")
+plt.ylabel("Frequency")
+plt.show()
 # %%
 unoptimal_eps = 10
 # find the elbow
