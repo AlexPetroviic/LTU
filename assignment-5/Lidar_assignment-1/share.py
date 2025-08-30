@@ -48,7 +48,7 @@ pcd2 = np.load("dataset2.npy")
 print("pcd2 shape: ", pcd2.shape)
 
 #%% show downsampled data in external window
-#%matplotlib qt
+%matplotlib qt
 show_cloud(pcd1)
 show_cloud(pcd2)
 
